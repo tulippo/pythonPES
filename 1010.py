@@ -12,4 +12,4 @@ valor_total1 = float(a2 * a3)
 valor_total2 = float(b2 * b3) 
 total = valor_total1 + valor_total2
 
-print('Valor a pagar: {.2f}'.format(total))
+print('Valor a pagar: {:.2f}'.format(total))
