@@ -42,14 +42,12 @@ for i in range(N):
             resultado = 'Bazinga!' #*
         print(f'Caso #{i}: {resultado}\n')
 
-    elif sheldon == 'spock': #*spock
+    elif sheldon == 'spock': #spock
         if raj == 'papel' or raj == 'lagarto':
             resultado = 'Raj trapaceou!'#!
         elif raj == 'pedra' or raj == 'tesoura':
             resultado = 'Bazinga!' #*
-        print(f'Caso #{i}: {resultado}\n')
-    else: 
-        print('Raj trapaceou!')  
+        print(f'Caso #{i}: {resultado}\n') 
     
     
 
