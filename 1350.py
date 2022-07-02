@@ -1,4 +1,5 @@
 '''BeeCrowd 1350'''
+# Loop inicial para reintrodução das sequências.
 N = 1 
 while N != 0:
     # Entrada da quantidade de sentenças que serão lidas.
@@ -6,7 +7,7 @@ while N != 0:
     verdadeiras = 0 #* Declaração de variavéis.
     falsas = 0
 
-    # Loop para a leitura de sentenças sucessivas.
+    # Loop para a leitura de sentenças sucessivas (dê entrada com true ou false).
     for i in range(N): 
         sentença = str(input(' '))
         if sentença.find('true') != -1: #* Verificando a presença de sentenças verdadeiras. 
