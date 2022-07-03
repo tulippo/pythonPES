@@ -1,53 +1,57 @@
+'''BeeCrowd 1828'''
+# Importação da biblioteca auxiliar.
 import random
 
 jokenpo = ['pedra','papel','tesoura','spock','lagarto'] 
 
-N = int(input())
+N = int(input()) #* Número de casos desejados.
 
 for i in range(N):
     i += 1  
-    sheldon = random.choice(jokenpo)
-    raj = random.choice(jokenpo)
+    sheldon = random.choice(jokenpo) #* A máquina irá escolher um termo aleatório da lista.
+    raj = random.choice(jokenpo)     #* A máquina irá escolher um termo aleatório da lista.
+
     print(f'sheldou escolheu: {sheldon}')
     print(f'raj escolheu {raj}')
-    
-    if sheldon == raj:
+
+    if sheldon == raj: #* Caso dê EMPATE
         print(f'Caso #{i}: De novo!\n')
 
+# Considerando inicialmente a vitória de Sheldon.
     elif sheldon == 'pedra': #*pedra
         if raj == 'papel' or raj == 'spock':
             resultado = 'Raj trapaceou!' #!
         elif raj == 'lagarto' or raj == 'tesoura':
-            resultado = 'Bazinga!' #*
+            resultado = 'Bazinga!' #* vitória
         print(f'Caso #{i}: {resultado}\n')
 
     elif sheldon == 'papel': #*papel
         if raj == 'tesoura' or 'lagarto':
             resultado = 'Raj trapaceou!' #!
         elif raj == 'pedra' or raj == 'spock':
-            resultado = 'Bazinga!' #*
+            resultado = 'Bazinga!' #* vitória
         print(f'Caso #{i}: {resultado}\n')
 
     elif sheldon == 'tesoura': #*tesoura
         if raj == 'pedra' or raj == 'spock':
             resultado = 'Raj trapaceou!'#!
         elif raj == 'papel' or raj == 'lagarto':    
-            resultado = 'Bazinga!' #*
+            resultado = 'Bazinga!' #* vitória
         print(f'Caso #{i}: {resultado}\n')
 
     elif sheldon == 'lagarto': #*lagarto
         if raj == 'tesoura' or raj == 'pedra':
             resultado = 'Raj trapaceou!'#!
         elif raj == 'spock' or raj == 'papel':
-            resultado = 'Bazinga!' #*
+            resultado = 'Bazinga!' #* vitória
         print(f'Caso #{i}: {resultado}\n')
 
     elif sheldon == 'spock': #spock
         if raj == 'papel' or raj == 'lagarto':
             resultado = 'Raj trapaceou!'#!
         elif raj == 'pedra' or raj == 'tesoura':
-            resultado = 'Bazinga!' #*
-        print(f'Caso #{i}: {resultado}\n') 
+            resultado = 'Bazinga!' #* vitória
+        print(f'Caso #{i}: {resultado}\n') #* Resultado.
     
     
 

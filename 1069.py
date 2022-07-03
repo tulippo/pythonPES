@@ -6,7 +6,7 @@ for i in range(N):
     d1 = diamante.count('<') #* Contagem dos pares essenciais para formar 1 diamante.
     d2 = diamante.count('>')
     if d1 < d2:
-        diamantes_processados = d1 % d2 #* Cálcula-se 
+        diamantes_processados = d1 % d2 #* Cálcula-se sempre o menor valor pelo módulo do maior para definir a qtd. de pares
         print(diamantes_processados)
     elif d2 < d1:
         diamantes_processados = d2 % d1
