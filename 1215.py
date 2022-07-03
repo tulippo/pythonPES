@@ -19,6 +19,7 @@ for i in range(N):
             ultima_lista.append(res[x])
     x += 1  
     i += 1
+    
 N = len(res)
 for j in range(N):
     print(ultima_lista[y])
